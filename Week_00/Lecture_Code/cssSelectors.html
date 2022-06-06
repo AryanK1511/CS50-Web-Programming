@@ -1,0 +1,54 @@
+<!-- 
+CSS Selectors:
+1. a, b => Multiple element Selector
+2. a b => Descendant Selector
+3. a > b => Child Selector
+4. a + b => Adjacent Sibling Selector
+5. [a=b] => Attribute Selector
+6. a:b => Pseudoclass Selector
+7. a::b => Pseudoelement Selector 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+        <style>
+            ul li {
+                color: blue;
+            }
+
+            a[href="https://facebook.com"] {
+                color: red;
+            }
+
+            button {
+                width: 200px;
+                height: 50px;
+                font-size: 24px;
+                background-color: goldenrod;
+            }
+
+            button:hover {
+                background-color: burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>List item one</li>
+            <li>List item two</li>
+            <ul>
+                <li>Sublist item one</li>
+                <li>Sublist item two</li>
+            </ul>
+            <li>List item three</li>
+        </ol>
+        <ul>
+            <li><a href="https://google.com">Google</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://amazon.com">Amazon</a></li>
+        </ul>
+        <button>Click Me!</button>
+    </body>
+</html>
